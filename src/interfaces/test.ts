@@ -1,5 +1,0 @@
-
-interface test {
-
-    display(): any
-}
