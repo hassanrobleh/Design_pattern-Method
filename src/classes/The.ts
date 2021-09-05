@@ -1,12 +1,12 @@
-import { BoissonCafeinee } from "./BoissonCafeinee";
+import { BoissonCafeinee } from "./method/BoissonCafeinee";
 
 export class The extends BoissonCafeinee {
 
     preparer() {
-        console.log("Infusion du thé");
+        return "Infusion du thé";
     }
 
     ajouterSupplements() {
-        console.log("Ajout du citron");
+        return "Ajout du citron";
     }
 }

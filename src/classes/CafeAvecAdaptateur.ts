@@ -1,18 +1,15 @@
-import { BoissonCafeinee } from "./BoissonCafeinee";
+import { BoissonCafeinee } from "./method/BoissonCafeinee";
 
 export class CafeAvecAdaptateur extends BoissonCafeinee {
-
-
     preparer() {
-        console.log("Passage du cafe");
+        return "Passage du cafe";
     }
 
     ajouterSupplements() {
-        console.log("Ajout du lait et du sucre");
+        return "Ajout du lait et du sucre";
     }
 
     clientVeutSupplements(): boolean {
-
         let reponse = this.getReponseUser("n");
 
         if(reponse.toLowerCase().startsWith("o")) {
@@ -25,12 +22,10 @@ export class CafeAvecAdaptateur extends BoissonCafeinee {
 
     private getReponseUser(response: string): string {
 
-
         if(response == null) {
             return "non";
         }
 
         return response;
-
     }
 }
