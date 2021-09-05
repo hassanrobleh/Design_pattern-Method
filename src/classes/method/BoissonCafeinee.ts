@@ -1,26 +1,29 @@
 export abstract class BoissonCafeinee {
 
-    public readonly suivreRecette = () => {
-        this.faireBouillirEau();
-        this.preparer();
-        this.verserDansTasse();
+    suivreRecette() {
+        let result = "";
+        result += this.faireBouillirEau();
+        result += this.preparer();
+        result += this.verserDansTasse();
         if(this.clientVeutSupplements()) {
-            this.ajouterSupplements();
+            result += this.ajouterSupplements();
         }
+
+        return result;
     } 
 
-    abstract preparer(): void;
-    abstract ajouterSupplements(): void;
+    abstract preparer(): string;
+    abstract ajouterSupplements(): string;
 
-    faireBouillirEau() {
-        console.log("Portage de l'eau à ébullition");
+    faireBouillirEau(): string {
+        return "Portage de l'eau à ébullition, ";
     }
 
-    verserDansTasse() {
-        console.log("Remplissage de la tasse")
+    verserDansTasse(): string {
+        return "Remplissage de la tasse, ";
     }
 
-    clientVeutSupplements() {
+    clientVeutSupplements(): boolean {
         return true;
     }
 

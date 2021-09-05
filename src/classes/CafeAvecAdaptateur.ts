@@ -10,9 +10,9 @@ export class CafeAvecAdaptateur extends BoissonCafeinee {
     }
 
     clientVeutSupplements(): boolean {
-        let reponse = this.getReponseUser("n");
+        let response = this.getReponseUser("oui");
 
-        if(reponse.toLowerCase().startsWith("o")) {
+        if(response.toLowerCase().startsWith("o")) {
             return true
         } else {
             return false

@@ -3,7 +3,7 @@ import { BoissonCafeinee } from "./method/BoissonCafeinee";
 export class TheAvecAdaptateur extends BoissonCafeinee {
 
     preparer() {
-        return "Passage du thé";
+        return "Passage du thé, ";
     }
 
     ajouterSupplements() {
