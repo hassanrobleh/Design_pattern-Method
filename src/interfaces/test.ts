@@ -1,0 +1,5 @@
+
+interface test {
+
+    display(): any
+}
