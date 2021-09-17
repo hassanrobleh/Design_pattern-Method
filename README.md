@@ -9,6 +9,6 @@ la classe mère, mais laisse les sous-classes redéfinir certaines
 
 ```bash
 $ git clone https://github.com/hassanrobleh/Design_pattern-template-method.git
-$ cd Design_pattern-template-method
+$ cd 
 $ npm install
 $ npm run test
